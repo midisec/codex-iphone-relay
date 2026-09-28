@@ -1,0 +1,183 @@
+{
+  "date": "2026-09-28",
+  "app_version": "1.5",
+  "protocol_version": 3,
+  "macos": "15.3.1",
+  "ios": "26.6.1",
+  "iphone_state": "foreground",
+  "transport": "encrypted BLE L2CAP",
+  "usb_network_sharing": "disabled",
+  "notes": [
+    "Each round uploads and echoes 256 KiB; SHA-256 verified.",
+    "USB cable remained attached; Mac relay was in Bluetooth-only mode.",
+    "Write sizes tested sequentially, one random-data round per size. These samples do not establish a statistically significant throughput difference.",
+    "Source payload is the project BridgeCore Swift source repeated/truncated to 256 KiB. Effective throughput includes compression; it is not raw radio throughput.",
+    "A separate earlier run interrupted after the phone left the foreground; excluded from this foreground series.",
+    "Final build smoke: one 128 KiB random echo at the default 16 KiB write cap; do not compare it as an equal-size controlled benchmark."
+  ],
+  "results": [
+    {
+      "protocol_version": 3,
+      "transport": "bluetooth-l2cap",
+      "kind": "random",
+      "round": 1,
+      "bytes_each_direction": 262144,
+      "upload_seconds": 11.848,
+      "download_seconds": 11.848,
+      "total_seconds": 23.696,
+      "upload_kib_per_second": 21.6,
+      "download_kib_per_second": 21.6,
+      "wire_bytes": 526602,
+      "transport_diagnostics": {
+        "max_write_microseconds": 381,
+        "write_microseconds": 5426,
+        "write_size": 16384,
+        "queued_bytes": 0,
+        "write_calls": 129
+      },
+      "wire_kib_per_second": 21.7,
+      "effective_kib_per_second": 21.6,
+      "sha256_match": true
+    },
+    {
+      "protocol_version": 3,
+      "transport": "bluetooth-l2cap",
+      "kind": "random",
+      "round": 1,
+      "bytes_each_direction": 262144,
+      "upload_seconds": 11.875,
+      "download_seconds": 11.307,
+      "total_seconds": 23.181,
+      "upload_kib_per_second": 21.6,
+      "download_kib_per_second": 22.6,
+      "wire_bytes": 526602,
+      "transport_diagnostics": {
+        "max_write_microseconds": 193,
+        "queued_bytes": 0,
+        "write_calls": 121,
+        "write_size": 4096,
+        "write_microseconds": 3594
+      },
+      "wire_kib_per_second": 22.2,
+      "effective_kib_per_second": 22.1,
+      "sha256_match": true
+    },
+    {
+      "protocol_version": 3,
+      "transport": "bluetooth-l2cap",
+      "kind": "random",
+      "round": 1,
+      "bytes_each_direction": 262144,
+      "upload_seconds": 10.447,
+      "download_seconds": 11.129,
+      "total_seconds": 21.576,
+      "upload_kib_per_second": 24.5,
+      "download_kib_per_second": 23.0,
+      "wire_bytes": 526602,
+      "transport_diagnostics": {
+        "write_calls": 118,
+        "write_microseconds": 4420,
+        "queued_bytes": 0,
+        "write_size": 65536,
+        "max_write_microseconds": 100
+      },
+      "wire_kib_per_second": 23.8,
+      "effective_kib_per_second": 23.7,
+      "sha256_match": true
+    },
+    {
+      "protocol_version": 3,
+      "transport": "bluetooth-l2cap",
+      "kind": "source",
+      "round": 1,
+      "bytes_each_direction": 262144,
+      "upload_seconds": 3.128,
+      "download_seconds": 2.82,
+      "total_seconds": 5.948,
+      "upload_kib_per_second": 81.8,
+      "download_kib_per_second": 90.8,
+      "wire_bytes": 148508,
+      "transport_diagnostics": {
+        "write_size": 65536,
+        "queued_bytes": 0,
+        "write_calls": 163,
+        "write_microseconds": 6910,
+        "max_write_microseconds": 739
+      },
+      "wire_kib_per_second": 24.4,
+      "effective_kib_per_second": 86.1,
+      "sha256_match": true
+    },
+    {
+      "protocol_version": 3,
+      "transport": "bluetooth-l2cap",
+      "kind": "source",
+      "round": 2,
+      "bytes_each_direction": 262144,
+      "upload_seconds": 3.046,
+      "download_seconds": 3.692,
+      "total_seconds": 6.738,
+      "upload_kib_per_second": 84.0,
+      "download_kib_per_second": 69.3,
+      "wire_bytes": 148525,
+      "transport_diagnostics": {
+        "write_calls": 202,
+        "max_write_microseconds": 739,
+        "write_microseconds": 8442,
+        "write_size": 65536,
+        "queued_bytes": 0
+      },
+      "wire_kib_per_second": 21.5,
+      "effective_kib_per_second": 76.0,
+      "sha256_match": true
+    },
+    {
+      "protocol_version": 3,
+      "transport": "bluetooth-l2cap",
+      "kind": "source",
+      "round": 3,
+      "bytes_each_direction": 262144,
+      "upload_seconds": 2.874,
+      "download_seconds": 2.902,
+      "total_seconds": 5.776,
+      "upload_kib_per_second": 89.1,
+      "download_kib_per_second": 88.2,
+      "wire_bytes": 148482,
+      "transport_diagnostics": {
+        "write_microseconds": 9876,
+        "queued_bytes": 0,
+        "write_size": 65536,
+        "max_write_microseconds": 739,
+        "write_calls": 240
+      },
+      "wire_kib_per_second": 25.1,
+      "effective_kib_per_second": 88.6,
+      "sha256_match": true
+    }
+  ],
+  "final_build_smoke": [
+    {
+      "protocol_version": 3,
+      "transport": "bluetooth-l2cap",
+      "kind": "random",
+      "round": 1,
+      "bytes_each_direction": 131072,
+      "upload_seconds": 4.809,
+      "download_seconds": 4.645,
+      "total_seconds": 9.454,
+      "upload_kib_per_second": 26.6,
+      "download_kib_per_second": 27.6,
+      "wire_bytes": 263572,
+      "transport_diagnostics": {
+        "write_calls": 63,
+        "queued_bytes": 0,
+        "write_size": 16384,
+        "write_microseconds": 1508,
+        "max_write_microseconds": 187
+      },
+      "wire_kib_per_second": 27.2,
+      "effective_kib_per_second": 27.1,
+      "sha256_match": true
+    }
+  ]
+}

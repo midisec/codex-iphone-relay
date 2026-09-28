@@ -1,0 +1,1081 @@
+{
+  "date": "2026-09-28",
+  "macos": "15.3.1",
+  "ios": "26.6.1",
+  "release": "1.5.1",
+  "transport": "bluetooth-l2cap",
+  "usb_network_sharing": false,
+  "system_log_observations": {
+    "tx_phy_mbps": 2,
+    "rx_phy_mbps": 2,
+    "tx_octets": 251,
+    "rx_octets": 251,
+    "connection_interval_ms": 30,
+    "peripheral_latency": 0,
+    "internal_l2cap_buffer_bytes": 1251,
+    "stack_full_stops_read_source": true
+  },
+  "hci_connection": {
+    "mac_receive_mtu": 1251,
+    "mac_receive_mps": 1251,
+    "phone_receive_mtu": 2048,
+    "phone_receive_mps": 2048,
+    "mac_initial_credits": 65535,
+    "phone_initial_credits": 65535,
+    "credit_topup_signals": 0
+  },
+  "hci_controller_observations": {
+    "max_outstanding_acl_packets": 16,
+    "acl_sends": 3861,
+    "sends_reaching_16_outstanding": 3745,
+    "completion_notifications": 3861,
+    "neighboring_completion_cluster_median_ms": 30,
+    "completion_cluster_size_counts": {
+      "1": 268,
+      "2": 102,
+      "3": 60,
+      "4": 205,
+      "5": 473,
+      "6": 4
+    },
+    "cluster_separation_threshold_ms": 10,
+    "neighbor_interval_filter_max_ms": 100
+  },
+  "experiments": {
+    "trace-w4a": [
+      {
+        "protocol_version": 3,
+        "transport": "bluetooth-l2cap",
+        "kind": "random",
+        "round": 1,
+        "bytes_each_direction": 262144,
+        "upload_seconds": 12.218,
+        "download_seconds": 12.54,
+        "total_seconds": 24.758,
+        "upload_kib_per_second": 21.0,
+        "download_kib_per_second": 20.4,
+        "wire_bytes": 526602,
+        "transport_diagnostics": {
+          "read_calls": 226,
+          "write_microseconds": 3342,
+          "max_write_microseconds": 111,
+          "space_wait_microseconds": 10506137,
+          "write_size": 16384,
+          "space_events": 112,
+          "queue_high_water": 106664,
+          "decode_microseconds": 5005,
+          "queued_bytes": 0,
+          "write_calls": 118,
+          "encode_microseconds": 5664,
+          "zero_writes": 0
+        },
+        "wire_kib_per_second": 20.8,
+        "effective_kib_per_second": 20.7,
+        "sha256_match": true
+      },
+      {
+        "protocol_version": 3,
+        "transport": "bluetooth-l2cap",
+        "kind": "random",
+        "round": 2,
+        "bytes_each_direction": 262144,
+        "upload_seconds": 11.328,
+        "download_seconds": 14.489,
+        "total_seconds": 25.817,
+        "upload_kib_per_second": 22.6,
+        "download_kib_per_second": 17.7,
+        "wire_bytes": 526640,
+        "transport_diagnostics": {
+          "write_size": 16384,
+          "read_calls": 448,
+          "write_microseconds": 5824,
+          "max_write_microseconds": 111,
+          "space_events": 221,
+          "queue_high_water": 106664,
+          "decode_microseconds": 8766,
+          "space_wait_microseconds": 20602773,
+          "write_calls": 234,
+          "queued_bytes": 0,
+          "zero_writes": 0,
+          "encode_microseconds": 9957
+        },
+        "wire_kib_per_second": 19.9,
+        "effective_kib_per_second": 19.8,
+        "sha256_match": true
+      },
+      {
+        "protocol_version": 3,
+        "transport": "bluetooth-l2cap",
+        "kind": "random",
+        "round": 3,
+        "bytes_each_direction": 262144,
+        "upload_seconds": 14.123,
+        "download_seconds": 19.654,
+        "total_seconds": 33.778,
+        "upload_kib_per_second": 18.1,
+        "download_kib_per_second": 13.0,
+        "wire_bytes": 526640,
+        "transport_diagnostics": {
+          "decode_microseconds": 12642,
+          "zero_writes": 0,
+          "queue_high_water": 110538,
+          "space_wait_microseconds": 33406562,
+          "write_size": 16384,
+          "write_microseconds": 8876,
+          "max_write_microseconds": 229,
+          "write_calls": 350,
+          "queued_bytes": 0,
+          "read_calls": 670,
+          "space_events": 329,
+          "encode_microseconds": 14053
+        },
+        "wire_kib_per_second": 15.2,
+        "effective_kib_per_second": 15.2,
+        "sha256_match": true
+      }
+    ],
+    "trace-w1": [
+      {
+        "protocol_version": 3,
+        "transport": "bluetooth-l2cap",
+        "kind": "random",
+        "round": 1,
+        "bytes_each_direction": 262144,
+        "upload_seconds": 12.527,
+        "download_seconds": 14.07,
+        "total_seconds": 26.598,
+        "upload_kib_per_second": 20.4,
+        "download_kib_per_second": 18.2,
+        "wire_bytes": 526602,
+        "transport_diagnostics": {
+          "queued_bytes": 0,
+          "read_calls": 226,
+          "encode_microseconds": 5945,
+          "write_size": 16384,
+          "queue_high_water": 32810,
+          "write_calls": 100,
+          "write_microseconds": 1712,
+          "zero_writes": 0,
+          "space_events": 99,
+          "decode_microseconds": 3784,
+          "space_wait_microseconds": 1597665,
+          "max_write_microseconds": 74
+        },
+        "wire_kib_per_second": 19.3,
+        "effective_kib_per_second": 19.2,
+        "sha256_match": true
+      },
+      {
+        "protocol_version": 3,
+        "transport": "bluetooth-l2cap",
+        "kind": "random",
+        "round": 2,
+        "bytes_each_direction": 262144,
+        "upload_seconds": 11.927,
+        "download_seconds": 12.48,
+        "total_seconds": 24.408,
+        "upload_kib_per_second": 21.5,
+        "download_kib_per_second": 20.5,
+        "wire_bytes": 526640,
+        "transport_diagnostics": {
+          "space_wait_microseconds": 3212685,
+          "write_calls": 200,
+          "queue_high_water": 32810,
+          "encode_microseconds": 11782,
+          "max_write_microseconds": 74,
+          "read_calls": 447,
+          "write_size": 16384,
+          "space_events": 198,
+          "zero_writes": 0,
+          "queued_bytes": 0,
+          "decode_microseconds": 7859,
+          "write_microseconds": 3116
+        },
+        "wire_kib_per_second": 21.1,
+        "effective_kib_per_second": 21.0,
+        "sha256_match": true
+      },
+      {
+        "protocol_version": 3,
+        "transport": "bluetooth-l2cap",
+        "kind": "random",
+        "round": 3,
+        "bytes_each_direction": 262144,
+        "upload_seconds": 10.911,
+        "download_seconds": 13.138,
+        "total_seconds": 24.049,
+        "upload_kib_per_second": 23.5,
+        "download_kib_per_second": 19.5,
+        "wire_bytes": 526602,
+        "transport_diagnostics": {
+          "queue_high_water": 32810,
+          "encode_microseconds": 18225,
+          "space_wait_microseconds": 4983711,
+          "queued_bytes": 0,
+          "space_events": 275,
+          "zero_writes": 0,
+          "write_size": 16384,
+          "read_calls": 668,
+          "decode_microseconds": 12635,
+          "write_calls": 284,
+          "max_write_microseconds": 3119,
+          "write_microseconds": 12645
+        },
+        "wire_kib_per_second": 21.4,
+        "effective_kib_per_second": 21.3,
+        "sha256_match": true
+      }
+    ],
+    "trace-w4b": [
+      {
+        "protocol_version": 3,
+        "transport": "bluetooth-l2cap",
+        "kind": "random",
+        "round": 1,
+        "bytes_each_direction": 262144,
+        "upload_seconds": 10.473,
+        "download_seconds": 10.53,
+        "total_seconds": 21.002,
+        "upload_kib_per_second": 24.4,
+        "download_kib_per_second": 24.3,
+        "wire_bytes": 526602,
+        "transport_diagnostics": {
+          "write_microseconds": 3094,
+          "queue_high_water": 106664,
+          "encode_microseconds": 5259,
+          "space_events": 112,
+          "decode_microseconds": 4383,
+          "read_calls": 225,
+          "zero_writes": 0,
+          "write_size": 16384,
+          "max_write_microseconds": 95,
+          "queued_bytes": 0,
+          "space_wait_microseconds": 9270100,
+          "write_calls": 118
+        },
+        "wire_kib_per_second": 24.5,
+        "effective_kib_per_second": 24.4,
+        "sha256_match": true
+      },
+      {
+        "protocol_version": 3,
+        "transport": "bluetooth-l2cap",
+        "kind": "random",
+        "round": 2,
+        "bytes_each_direction": 262144,
+        "upload_seconds": 10.156,
+        "download_seconds": 11.369,
+        "total_seconds": 21.526,
+        "upload_kib_per_second": 25.2,
+        "download_kib_per_second": 22.5,
+        "wire_bytes": 526602,
+        "transport_diagnostics": {
+          "space_wait_microseconds": 18281636,
+          "write_calls": 233,
+          "queued_bytes": 0,
+          "write_microseconds": 6169,
+          "max_write_microseconds": 98,
+          "read_calls": 446,
+          "zero_writes": 0,
+          "decode_microseconds": 8839,
+          "write_size": 16384,
+          "queue_high_water": 106664,
+          "encode_microseconds": 11547,
+          "space_events": 220
+        },
+        "wire_kib_per_second": 23.9,
+        "effective_kib_per_second": 23.8,
+        "sha256_match": true
+      },
+      {
+        "protocol_version": 3,
+        "transport": "bluetooth-l2cap",
+        "kind": "random",
+        "round": 3,
+        "bytes_each_direction": 262144,
+        "upload_seconds": 10.191,
+        "download_seconds": 10.859,
+        "total_seconds": 21.051,
+        "upload_kib_per_second": 25.1,
+        "download_kib_per_second": 23.6,
+        "wire_bytes": 526602,
+        "transport_diagnostics": {
+          "read_calls": 667,
+          "space_wait_microseconds": 27302456,
+          "zero_writes": 0,
+          "decode_microseconds": 14078,
+          "max_write_microseconds": 103,
+          "queued_bytes": 0,
+          "space_events": 328,
+          "queue_high_water": 106664,
+          "write_calls": 348,
+          "write_microseconds": 9483,
+          "encode_microseconds": 17652,
+          "write_size": 16384
+        },
+        "wire_kib_per_second": 24.4,
+        "effective_kib_per_second": 24.3,
+        "sha256_match": true
+      }
+    ],
+    "trace-1245-yield": [
+      {
+        "protocol_version": 3,
+        "transport": "bluetooth-l2cap",
+        "kind": "random",
+        "round": 1,
+        "bytes_each_direction": 262144,
+        "upload_seconds": 10.574,
+        "download_seconds": 12.299,
+        "total_seconds": 22.873,
+        "upload_kib_per_second": 24.2,
+        "download_kib_per_second": 20.8,
+        "wire_bytes": 526602,
+        "transport_diagnostics": {
+          "max_write_microseconds": 175,
+          "zero_writes": 0,
+          "space_events": 232,
+          "queue_high_water": 129995,
+          "decode_microseconds": 5517,
+          "write_yield_microseconds": 1000,
+          "read_calls": 225,
+          "queued_bytes": 0,
+          "write_microseconds": 5892,
+          "space_wait_microseconds": 9314691,
+          "encode_microseconds": 6828,
+          "write_size": 1245,
+          "write_calls": 233
+        },
+        "wire_kib_per_second": 22.5,
+        "effective_kib_per_second": 22.4,
+        "sha256_match": true
+      },
+      {
+        "protocol_version": 3,
+        "transport": "bluetooth-l2cap",
+        "kind": "random",
+        "round": 2,
+        "bytes_each_direction": 262144,
+        "upload_seconds": 10.873,
+        "download_seconds": 11.309,
+        "total_seconds": 22.183,
+        "upload_kib_per_second": 23.5,
+        "download_kib_per_second": 22.6,
+        "wire_bytes": 526602,
+        "transport_diagnostics": {
+          "max_write_microseconds": 223,
+          "zero_writes": 0,
+          "space_events": 460,
+          "queue_high_water": 129995,
+          "decode_microseconds": 10678,
+          "write_yield_microseconds": 1000,
+          "read_calls": 447,
+          "queued_bytes": 0,
+          "write_microseconds": 11766,
+          "space_wait_microseconds": 18622914,
+          "encode_microseconds": 13174,
+          "write_size": 1245,
+          "write_calls": 462
+        },
+        "wire_kib_per_second": 23.2,
+        "effective_kib_per_second": 23.1,
+        "sha256_match": true
+      },
+      {
+        "protocol_version": 3,
+        "transport": "bluetooth-l2cap",
+        "kind": "random",
+        "round": 3,
+        "bytes_each_direction": 262144,
+        "upload_seconds": 10.159,
+        "download_seconds": 11.61,
+        "total_seconds": 21.769,
+        "upload_kib_per_second": 25.2,
+        "download_kib_per_second": 22.1,
+        "wire_bytes": 526602,
+        "transport_diagnostics": {
+          "write_yield_microseconds": 1000,
+          "queue_high_water": 129995,
+          "write_microseconds": 17336,
+          "zero_writes": 0,
+          "queued_bytes": 0,
+          "read_calls": 669,
+          "space_wait_microseconds": 27606585,
+          "encode_microseconds": 20637,
+          "write_calls": 691,
+          "max_write_microseconds": 223,
+          "write_size": 1245,
+          "space_events": 687,
+          "decode_microseconds": 15276
+        },
+        "wire_kib_per_second": 23.6,
+        "effective_kib_per_second": 23.5,
+        "sha256_match": true
+      }
+    ]
+  },
+  "baseline_queue_ms": {
+    "ack": {
+      "count": 26,
+      "median": 313.596,
+      "max": 5492.67
+    },
+    "ping": {
+      "count": 12,
+      "median": 0.062,
+      "max": 3583.672
+    }
+  },
+  "mac_priority_queue": {
+    "ack": {
+      "count": 32,
+      "queue_ms_p50_p90_max": [
+        0.074,
+        420.04,
+        598.345
+      ]
+    },
+    "ping": {
+      "count": 12,
+      "queue_ms_p50_p90_max": [
+        0.053,
+        242.051,
+        1395.374
+      ]
+    },
+    "settingsAck": {
+      "count": 2,
+      "queue_ms_p50_p90_max": [
+        0.038,
+        0.038,
+        0.077
+      ]
+    }
+  },
+  "both_priority_queue": {
+    "ack": {
+      "count": 32,
+      "queue_ms_p50_p90_max": [
+        0.054,
+        431.66,
+        739.671
+      ]
+    },
+    "ping": {
+      "count": 9,
+      "queue_ms_p50_p90_max": [
+        0.076,
+        685.342,
+        1425.066
+      ]
+    },
+    "settingsAck": {
+      "count": 1,
+      "queue_ms_p50_p90_max": [
+        0.024,
+        0.024,
+        0.024
+      ]
+    }
+  },
+  "duplex_before_completed_rounds": [
+    {
+      "round": 1,
+      "total_seconds": 40.146859708,
+      "requests": [
+        {
+          "request": 1,
+          "upload_seconds": 9.812367875,
+          "download_seconds": 17.338897292,
+          "total_seconds": 27.151265167,
+          "sha256_match": true
+        },
+        {
+          "request": 2,
+          "upload_seconds": 17.343698125000003,
+          "download_seconds": 12.985988083000002,
+          "total_seconds": 30.329686208000005,
+          "sha256_match": true
+        }
+      ]
+    }
+  ],
+  "duplex_before_incomplete_round": {
+    "round": 2,
+    "reason": "Bluetooth stream disconnected",
+    "reconnected": true
+  },
+  "duplex_mac_priority": [
+    {
+      "round": 1,
+      "total_seconds": 37.927797792,
+      "requests": [
+        {
+          "request": 1,
+          "upload_seconds": 10.535386834,
+          "download_seconds": 16.891708416,
+          "total_seconds": 27.42709525,
+          "sha256_match": true
+        },
+        {
+          "request": 2,
+          "upload_seconds": 16.919235166999997,
+          "download_seconds": 10.468452958000004,
+          "total_seconds": 27.387688125000004,
+          "sha256_match": true
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "total_seconds": 37.648800709,
+      "requests": [
+        {
+          "request": 1,
+          "upload_seconds": 9.955214749999996,
+          "download_seconds": 17.671356958000004,
+          "total_seconds": 27.626571708,
+          "sha256_match": true
+        },
+        {
+          "request": 2,
+          "upload_seconds": 17.699965875000004,
+          "download_seconds": 9.989249165999993,
+          "total_seconds": 27.689215040999997,
+          "sha256_match": true
+        }
+      ]
+    }
+  ],
+  "duplex_both_priority": [
+    {
+      "round": 1,
+      "total_seconds": 40.145226957999995,
+      "requests": [
+        {
+          "request": 1,
+          "upload_seconds": 10.78783875,
+          "download_seconds": 24.166595374999996,
+          "total_seconds": 34.954434125,
+          "sha256_match": true
+        },
+        {
+          "request": 2,
+          "upload_seconds": 18.9738745,
+          "download_seconds": 10.379983541999998,
+          "total_seconds": 29.353858042,
+          "sha256_match": true
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "total_seconds": 39.82464983399999,
+      "requests": [
+        {
+          "request": 1,
+          "upload_seconds": 9.208548,
+          "download_seconds": 19.033857791999992,
+          "total_seconds": 28.242405791999992,
+          "sha256_match": true
+        },
+        {
+          "request": 2,
+          "upload_seconds": 19.064166958,
+          "download_seconds": 11.547971875000002,
+          "total_seconds": 30.612138833000003,
+          "sha256_match": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "HCI is host-side, not an over-the-air retransmission measurement.",
+    "Separate batches and phone restarts are not a controlled throughput improvement comparison.",
+    "Control queue latency measures enqueue to local stream write, not remote receipt."
+  ],
+  "application_traces": {
+    "trace-w4a": {
+      "capture_complete": true,
+      "requests": [
+        {
+          "round": 1,
+          "complete": true,
+          "bytes_each_direction": 262144,
+          "upload_ms": 12211.538,
+          "download_ms": 12540.556,
+          "output_space_wait_ms": 10501.862,
+          "output_space_wait_percent_of_upload": 86.0,
+          "upload_queue_empty_with_unsent_body_ms": 0.0,
+          "write_cpu_ms": 2.998,
+          "encode_cpu_ms": 5.315,
+          "max_queued_bytes": 106664,
+          "write_size_counts": {
+            "2502": 82,
+            "8192": 3,
+            "211": 1,
+            "3753": 1,
+            "1979": 1,
+            "3025": 1,
+            "2263": 1,
+            "2741": 1
+          },
+          "write_gap_ms_p50_p90_p99_max": [
+            92.841,
+            146.055,
+            302.993,
+            1645.32
+          ],
+          "download_ack_delay_ms_p50_p99_max": [
+            0.192,
+            0.23,
+            0.267
+          ],
+          "main_timer_gap_ms_p50_p99_max": [
+            99.985,
+            100.854,
+            100.995
+          ]
+        },
+        {
+          "round": 2,
+          "complete": true,
+          "bytes_each_direction": 262144,
+          "upload_ms": 11323.63,
+          "download_ms": 14489.489,
+          "output_space_wait_ms": 10096.636,
+          "output_space_wait_percent_of_upload": 89.16,
+          "upload_queue_empty_with_unsent_body_ms": 0.0,
+          "write_cpu_ms": 2.278,
+          "encode_cpu_ms": 4.276,
+          "max_queued_bytes": 106664,
+          "write_size_counts": {
+            "2502": 84,
+            "8192": 3,
+            "211": 1,
+            "728": 1,
+            "3025": 1,
+            "2263": 1,
+            "2741": 1,
+            "45": 1
+          },
+          "write_gap_ms_p50_p90_p99_max": [
+            90.191,
+            149.833,
+            185.284,
+            1164.414
+          ],
+          "download_ack_delay_ms_p50_p99_max": [
+            0.132,
+            0.22,
+            0.582
+          ],
+          "main_timer_gap_ms_p50_p99_max": [
+            99.993,
+            101.184,
+            102.257
+          ]
+        },
+        {
+          "round": 3,
+          "complete": true,
+          "bytes_each_direction": 262144,
+          "upload_ms": 14120.377,
+          "download_ms": 19650.072,
+          "output_space_wait_ms": 12803.789,
+          "output_space_wait_percent_of_upload": 90.68,
+          "upload_queue_empty_with_unsent_body_ms": 0.0,
+          "write_cpu_ms": 2.493,
+          "encode_cpu_ms": 4.057,
+          "max_queued_bytes": 110538,
+          "write_size_counts": {
+            "2502": 83,
+            "7506": 2,
+            "211": 1,
+            "8192": 1,
+            "5004": 1,
+            "2100": 1,
+            "2904": 1,
+            "2384": 1
+          },
+          "write_gap_ms_p50_p90_p99_max": [
+            119.29,
+            210.238,
+            272.387,
+            1222.845
+          ],
+          "download_ack_delay_ms_p50_p99_max": [
+            0.232,
+            0.434,
+            0.452
+          ],
+          "main_timer_gap_ms_p50_p99_max": [
+            100.022,
+            101.2,
+            102.268
+          ]
+        }
+      ]
+    },
+    "trace-w1": {
+      "capture_complete": true,
+      "requests": [
+        {
+          "round": 1,
+          "complete": true,
+          "bytes_each_direction": 262144,
+          "upload_ms": 12524.314,
+          "download_ms": 14070.311,
+          "output_space_wait_ms": 1595.331,
+          "output_space_wait_percent_of_upload": 12.74,
+          "upload_queue_empty_with_unsent_body_ms": 9402.125,
+          "write_cpu_ms": 1.383,
+          "encode_cpu_ms": 5.672,
+          "max_queued_bytes": 32810,
+          "write_size_counts": {
+            "2502": 61,
+            "8192": 9,
+            "2100": 6,
+            "3753": 3,
+            "5004": 2,
+            "211": 1,
+            "1414": 1,
+            "849": 1
+          },
+          "write_gap_ms_p50_p90_p99_max": [
+            0.268,
+            176.571,
+            1465.307,
+            1949.954
+          ],
+          "download_ack_delay_ms_p50_p99_max": [
+            0.176,
+            0.32,
+            0.326
+          ],
+          "main_timer_gap_ms_p50_p99_max": [
+            99.999,
+            100.347,
+            100.776
+          ]
+        },
+        {
+          "round": 2,
+          "complete": true,
+          "bytes_each_direction": 262144,
+          "upload_ms": 11924.298,
+          "download_ms": 12479.655,
+          "output_space_wait_ms": 1615.02,
+          "output_space_wait_percent_of_upload": 13.54,
+          "upload_queue_empty_with_unsent_body_ms": 9023.158,
+          "write_cpu_ms": 1.214,
+          "encode_cpu_ms": 5.806,
+          "max_queued_bytes": 32810,
+          "write_size_counts": {
+            "2502": 67,
+            "8192": 9,
+            "2100": 5,
+            "19": 2,
+            "3753": 2,
+            "849": 2,
+            "211": 1,
+            "1414": 1
+          },
+          "write_gap_ms_p50_p90_p99_max": [
+            0.309,
+            237.728,
+            1408.509,
+            1467.919
+          ],
+          "download_ack_delay_ms_p50_p99_max": [
+            0.171,
+            0.222,
+            0.553
+          ],
+          "main_timer_gap_ms_p50_p99_max": [
+            99.998,
+            101.802,
+            110.263
+          ]
+        },
+        {
+          "round": 3,
+          "complete": true,
+          "bytes_each_direction": 262144,
+          "upload_ms": 10907.281,
+          "download_ms": 13138.151,
+          "output_space_wait_ms": 1771.026,
+          "output_space_wait_percent_of_upload": 16.24,
+          "upload_queue_empty_with_unsent_body_ms": 7924.277,
+          "write_cpu_ms": 9.188,
+          "encode_cpu_ms": 6.416,
+          "max_queued_bytes": 32810,
+          "write_size_counts": {
+            "2502": 45,
+            "8192": 14,
+            "2100": 4,
+            "1414": 2,
+            "3753": 2,
+            "1979": 2,
+            "6255": 2,
+            "211": 1
+          },
+          "write_gap_ms_p50_p90_p99_max": [
+            0.275,
+            177.546,
+            1169.291,
+            1195.386
+          ],
+          "download_ack_delay_ms_p50_p99_max": [
+            0.168,
+            0.394,
+            0.452
+          ],
+          "main_timer_gap_ms_p50_p99_max": [
+            99.999,
+            105.308,
+            113.457
+          ]
+        }
+      ]
+    },
+    "trace-w4b": {
+      "limit_reached": false,
+      "request_analysis": "sequential",
+      "requests": [
+        {
+          "round": 1,
+          "complete": true,
+          "bytes_each_direction": 262144,
+          "upload_ms": 10467.506,
+          "download_ms": 10529.915,
+          "output_space_wait_ms": 9267.693,
+          "output_space_wait_percent_of_upload": 88.54,
+          "upload_queue_empty_with_unsent_body_ms": 0.0,
+          "write_cpu_ms": 2.816,
+          "encode_cpu_ms": 5.007,
+          "max_queued_bytes": 106664,
+          "write_size_counts": {
+            "2502": 82,
+            "8192": 3,
+            "211": 1,
+            "3753": 1,
+            "1979": 1,
+            "3025": 1,
+            "2263": 1,
+            "2741": 1
+          },
+          "write_gap_ms_p50_p90_p99_max": [
+            92.186,
+            122.839,
+            154.093,
+            1137.794
+          ],
+          "download_ack_delay_ms_p50_p99_max": [
+            0.223,
+            0.281,
+            0.44
+          ],
+          "main_timer_gap_ms_p50_p99_max": [
+            100.001,
+            100.89,
+            109.223
+          ]
+        },
+        {
+          "round": 2,
+          "complete": true,
+          "bytes_each_direction": 262144,
+          "upload_ms": 10152.977,
+          "download_ms": 11369.563,
+          "output_space_wait_ms": 9011.536,
+          "output_space_wait_percent_of_upload": 88.76,
+          "upload_queue_empty_with_unsent_body_ms": 0.0,
+          "write_cpu_ms": 2.839,
+          "encode_cpu_ms": 6.268,
+          "max_queued_bytes": 106664,
+          "write_size_counts": {
+            "2502": 84,
+            "8192": 3,
+            "211": 1,
+            "728": 1,
+            "3025": 1,
+            "2263": 1,
+            "2741": 1,
+            "45": 1
+          },
+          "write_gap_ms_p50_p90_p99_max": [
+            87.987,
+            146.249,
+            174.981,
+            1078.584
+          ],
+          "download_ack_delay_ms_p50_p99_max": [
+            0.198,
+            0.269,
+            0.638
+          ],
+          "main_timer_gap_ms_p50_p99_max": [
+            100.007,
+            100.915,
+            101.02
+          ]
+        },
+        {
+          "round": 3,
+          "complete": true,
+          "bytes_each_direction": 262144,
+          "upload_ms": 10187.552,
+          "download_ms": 10859.505,
+          "output_space_wait_ms": 9020.82,
+          "output_space_wait_percent_of_upload": 88.55,
+          "upload_queue_empty_with_unsent_body_ms": 0.0,
+          "write_cpu_ms": 3.049,
+          "encode_cpu_ms": 6.067,
+          "max_queued_bytes": 106664,
+          "write_size_counts": {
+            "2502": 84,
+            "8192": 3,
+            "211": 1,
+            "728": 1,
+            "3025": 1,
+            "2263": 1,
+            "2741": 1,
+            "45": 1
+          },
+          "write_gap_ms_p50_p90_p99_max": [
+            89.917,
+            121.531,
+            150.154,
+            1104.256
+          ],
+          "download_ack_delay_ms_p50_p99_max": [
+            0.286,
+            0.552,
+            0.662
+          ],
+          "main_timer_gap_ms_p50_p99_max": [
+            100.026,
+            100.871,
+            100.999
+          ]
+        }
+      ],
+      "control_queue": {}
+    }
+  },
+  "final_without_capture": [
+    {
+      "protocol_version": 3,
+      "transport": "bluetooth-l2cap",
+      "kind": "random",
+      "round": 1,
+      "bytes_each_direction": 262144,
+      "upload_seconds": 10.437,
+      "download_seconds": 11.157,
+      "total_seconds": 21.594,
+      "upload_kib_per_second": 24.5,
+      "download_kib_per_second": 22.9,
+      "wire_bytes": 526602,
+      "transport_diagnostics": {
+        "space_events": 119,
+        "zero_writes": 0,
+        "decode_microseconds": 4947,
+        "queued_bytes": 0,
+        "space_wait_microseconds": 9296405,
+        "max_write_microseconds": 581,
+        "read_calls": 233,
+        "max_control_queue_microseconds": 37651,
+        "encode_microseconds": 6334,
+        "write_size": 16384,
+        "queue_high_water": 106664,
+        "write_microseconds": 3601,
+        "control_frames": 18,
+        "write_calls": 125
+      },
+      "wire_kib_per_second": 23.8,
+      "effective_kib_per_second": 23.7,
+      "sha256_match": true
+    },
+    {
+      "protocol_version": 3,
+      "transport": "bluetooth-l2cap",
+      "kind": "random",
+      "round": 2,
+      "bytes_each_direction": 262144,
+      "upload_seconds": 10.643,
+      "download_seconds": 10.559,
+      "total_seconds": 21.202,
+      "upload_kib_per_second": 24.1,
+      "download_kib_per_second": 24.2,
+      "wire_bytes": 526602,
+      "transport_diagnostics": {
+        "decode_microseconds": 10055,
+        "write_microseconds": 7240,
+        "space_wait_microseconds": 18853768,
+        "space_events": 227,
+        "queue_high_water": 106664,
+        "queued_bytes": 0,
+        "zero_writes": 0,
+        "write_size": 16384,
+        "encode_microseconds": 12006,
+        "control_frames": 28,
+        "max_write_microseconds": 581,
+        "read_calls": 455,
+        "max_control_queue_microseconds": 490780,
+        "write_calls": 240
+      },
+      "wire_kib_per_second": 24.3,
+      "effective_kib_per_second": 24.1,
+      "sha256_match": true
+    },
+    {
+      "protocol_version": 3,
+      "transport": "bluetooth-l2cap",
+      "kind": "random",
+      "round": 3,
+      "bytes_each_direction": 262144,
+      "upload_seconds": 9.742,
+      "download_seconds": 10.14,
+      "total_seconds": 19.882,
+      "upload_kib_per_second": 26.3,
+      "download_kib_per_second": 25.2,
+      "wire_bytes": 526602,
+      "transport_diagnostics": {
+        "queued_bytes": 0,
+        "decode_microseconds": 18009,
+        "write_size": 16384,
+        "write_microseconds": 11243,
+        "space_wait_microseconds": 27425571,
+        "max_write_microseconds": 644,
+        "zero_writes": 0,
+        "max_control_queue_microseconds": 1138091,
+        "write_calls": 355,
+        "read_calls": 677,
+        "queue_high_water": 106664,
+        "encode_microseconds": 17244,
+        "control_frames": 38,
+        "space_events": 335
+      },
+      "wire_kib_per_second": 25.9,
+      "effective_kib_per_second": 25.8,
+      "sha256_match": true
+    }
+  ],
+  "final_codex_followups": {
+    "passed": 3,
+    "seconds": [
+      8.37,
+      8.47,
+      7.3
+    ],
+    "context_retained": true,
+    "turn_completed_each": true,
+    "test_process_network": "localhost only"
+  },
+  "final_preflight_retry": {
+    "stage": "localhost health check, before any Bluetooth benchmark traffic",
+    "error": "socket ENOMEM",
+    "retried_successfully": true
+  }
+}
